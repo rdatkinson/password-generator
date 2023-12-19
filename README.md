@@ -1,7 +1,7 @@
 # password-generator
 
 ## Description
-This project is a random password generator, that allows the end user to generate a random, secure password that includes uppercase, lowercase, numeric and special characters, that has to be a minimum of 8 characters but no more than 128 characters.
+This project is a random password generator, that allows the end user to generate a random, secure password that includes uppercase, lowercase, numeric and special characters, that has to be a minimum of 8 characters but no more than 128 characters. You can access the app using this link: https://rdatkinson.github.io/password-generator/
 
 ## Installation
 N/A
