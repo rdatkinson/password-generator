@@ -108,26 +108,37 @@ function getPasswordOptions() {
     return null;
   }
 
-  // Function for getting a random element from an array
-  function getRandom(arr) {
+  var passwordOptions = {
+    length: length,
+    hasSpecialCharacters: hasSpecialCharacters,
+    hasNumericCharacters: hasNumericCharacters,
+    hasLowerCasedCharacters: hasLowerCasedCharacters,
+    hasUpperCasedCharacters: hasUpperCasedCharacters
+  };
 
-  }
+  return passwordOptions;
+}
 
-  // Function to generate password with user input
-  function generatePassword() {
+// Function for getting a random element from an array
+function getRandom(arr) {
 
-  }
+}
 
-  // Get references to the #generate element
-  var generateBtn = document.querySelector('#generate');
+// Function to generate password with user input
+function generatePassword() {
 
-  // Write password to the #password input
-  function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector('#password');
+}
 
-    passwordText.value = password;
-  }
+// Get references to the #generate element
+var generateBtn = document.querySelector('#generate');
 
-  // Add event listener to generate button
-  generateBtn.addEventListener('click', writePassword);
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector('#password');
+
+  passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener('click', writePassword);
