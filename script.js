@@ -156,6 +156,18 @@ function generatePassword() {
     possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
     guaranteedCharacters.push(getRandom(upperCasedCharacters));
   }
+
+  for (var i = 0; i < options.length; i++) {
+    var possibleCharacter = getRandom(possibleCharacters);
+
+    result.push(possibleCharacter);
+  }
+
+  for (var i = 0; i < guaranteedCharacters.length; i++) {
+    result[i] = guaranteedCharacters[i];
+  }
+
+  return result.join('');
 }
 
 // Get references to the #generate element
